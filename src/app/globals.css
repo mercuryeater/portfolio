@@ -5,19 +5,19 @@
 }
 
 @font-face {
-  font-family: "ProximaNova";
+  font-family: "ProximaNova-Bold";
   src: url(../fonts/ProximaNovaBold.otf) format("opentype");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "ProximaNova";
+  font-family: "ProximaNova-Black";
   src: url(../fonts/ProximaNovaBlack.otf) format("opentype");
   font-weight: bolder;
 }
 
 @font-face {
-  font-family: "ProximaNova";
+  font-family: "ProximaNova-Thin";
   src: url(../fonts/ProximaNovaThin.otf) format("opentype");
   font-weight: lighter;
 }
