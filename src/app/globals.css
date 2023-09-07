@@ -33,7 +33,7 @@ body {
     rgb(7, 28, 133) 0%,
     rgba(16, 21, 47, 1) 100%
   );
-
   color: #d6e4f2;
-  padding-top: 60px;
+  padding: 60px;
+  background-attachment: fixed;
 }

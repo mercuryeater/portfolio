@@ -1,5 +1,5 @@
-import Technologies from "@components/Technologies.jsx";
-import Projects from "@components/Projects.jsx";
+import Skills from "@/components/Skills/Skills.jsx";
+import Projects from "@/components/Projects/Projects.jsx";
 import { IconBrandGithubFilled, IconBrandLinkedin } from "@tabler/icons-react";
 import "./page.scss";
 
@@ -35,7 +35,7 @@ export default function Home() {
           <strong> Git Flow</strong> for enhanced action flow and communication.
         </p>
       </main>
-      {/* <Technologies /> */}
+      <Skills />
       {/* <Projects /> */}
     </>
   );

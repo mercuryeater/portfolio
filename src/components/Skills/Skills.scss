@@ -1,0 +1,20 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+gap: 20px;
+
+  &__frontEnd {
+    width: 255px;
+  }
+
+  &__backEnd {
+    width: 255px;
+  }
+}
+
+@media screen and (min-width:700px) {
+  .skills {
+    flex-direction: row;
+
+  }  
+}
