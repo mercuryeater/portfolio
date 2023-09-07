@@ -35,8 +35,8 @@ export default function Home() {
           <strong> Git Flow</strong> for enhanced action flow and communication.
         </p>
       </main>
-      <Skills />
-      {/* <Projects /> */}
+      {/* <Skills /> */}
+      <Projects />
     </>
   );
 }

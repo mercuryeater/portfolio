@@ -1,0 +1,15 @@
+.project {
+    /* From https://css.glass */
+    background: rgba(214, 228, 242, 0.059);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    // border: 1px solid rgba(214, 228, 242, 0.23);
+    // padding: 10px;
+
+    &__thumb {
+        width: 100%;
+        border-radius: 16px 16px 0px 0px;
+    }
+}
