@@ -1,20 +1,37 @@
 .skills {
   display: flex;
-  flex-direction: column;
-gap: 20px;
+  margin: 20px auto;
+  max-width: 1050px;
+  gap: 40px;
+  justify-content: center;
 
   &__frontEnd {
-    width: 255px;
+    max-width: 350px;
+    min-width: 170px;
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
   }
 
   &__backEnd {
-    width: 255px;
+    max-width: 350px;
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+
+  }
+
+  &__other {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    max-width: 350px;
   }
 }
 
-@media screen and (min-width:700px) {
+@media screen and (max-width:435px) {
   .skills {
-    flex-direction: row;
+    flex-direction: column;
 
   }  
 }

@@ -1,16 +1,14 @@
 .aboutMe {
+  max-width: 1050px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 15px 0px;
-  gap: 30px;
+  margin: 15px auto;
+  gap: 60px;
 
   &__nameInfo {
+    text-align: left;
     width: 320px;
-    display: inherit;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
     h1 {
       font-family: "ProximaNova-Bold";
       font-size: 38px;
@@ -20,7 +18,7 @@
     h3 {
       font-family: "ProximaNova-Thin";
       font-size: 22px;
-      margin: 0;
+      margin-top: 10px;
       text-align: left;
     }
 
