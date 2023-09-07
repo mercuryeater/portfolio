@@ -1,5 +1,5 @@
 import Skills from "@/components/Skills/Skills.jsx";
-import Projects from "@components/Projects.jsx";
+import Projects from "@/components/Projects/Projects.jsx";
 import { IconBrandGithubFilled, IconBrandLinkedin } from "@tabler/icons-react";
 import "./page.scss";
 
