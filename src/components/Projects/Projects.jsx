@@ -1,14 +1,17 @@
-import Image from "next/image";
+import MainProject from "./MainProject";
 import "./Projects.scss"
 
 export default function Projects() {
+
+  const ricaCab = {
+    name : "RICA CAB APP",
+    description : "Rica is a transportation app developed combining React and Express. It connects passengers with registered drivers and fleet owners, offering a straightforward way to request rides and manage transportation schedules. Passengers can easily find and schedule trips, while drivers and fleet owners can efficiently accept requests.",
+  }
+
+
   return (
-    <>
-    <div className="project">
-      <Image className="project__thumb" src="/test.JPG" alt="Test" />
-      <h2 className="project__name">Project name</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, quaerat est impedit reprehenderit ipsum beatae explicabo asperiores illo odit quod sequi qui nihil libero temporibus exercitationem consequuntur praesentium quam provident?</p>
-    </div>
-    </>
+    <main className="projects">
+      <MainProject source={"/test.JPG"} name={ricaCab.name} description={ricaCab.description} />
+    </main>
   );
 }

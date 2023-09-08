@@ -1,0 +1,25 @@
+.project {
+    /* From https://css.glass */
+    background: rgba(214, 228, 242, 0.059);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(17, 4, 68, 0.259);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(214, 228, 242, 0.23);
+    display: grid;
+    grid-template-rows: minmax(150px, auto) 1fr;
+    align-items: start;
+    max-width: 450px;
+
+    &__thumb {
+        height: 180px ;
+        border-radius: 16px 16px 0px 0px;
+        object-fit: "cover";
+        overflow: hidden;
+        position: "relative";
+    }
+
+    &__texts {
+        padding: 0px 20px;
+    }
+}
