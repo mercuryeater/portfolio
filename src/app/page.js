@@ -36,7 +36,7 @@ export default function Home() {
         </p>
       </main>
       <Skills />
-      {/* <Projects /> */}
+      <Projects />
     </>
   );
 }

@@ -1,0 +1,58 @@
+.link {
+  width: fit-content;
+  text-decoration: none;
+  color: inherit;
+  flex-basis: calc(90% - 16px);
+  box-sizing: border-box;
+}
+
+.project {
+  /* From https://css.glass */
+  background: rgba(214, 228, 242, 0.059);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(17, 4, 68, 0.259);
+  border: 1px solid rgba(214, 228, 242, 0.23);
+  display: grid;
+  grid-template-rows: minmax(150px, 300px) 1fr;
+  align-items: start;
+  flex-basis: calc(90% - 16px);
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &__thumb {
+    height: 100%;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__texts {
+    display: grid;
+    grid-template-rows: auto auto;
+
+    &__name {
+      background-color: #c1cad650;
+      margin: 0px;
+      padding: 20px;
+    }
+
+    &__description {
+      padding: 0px 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .project {
+    flex-basis: calc(50% - 16px);
+  }
+  .link {
+    flex-basis: calc(50% - 16px);
+  }
+}
