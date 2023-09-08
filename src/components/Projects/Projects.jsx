@@ -6,12 +6,14 @@ export default function Projects() {
     name: "RICA CAB APP",
     description:
       "Transportation app developed combining React and Express. It connects passengers with registered drivers and fleet owners, offering a straightforward way to request rides and manage transportation schedules. Passengers can easily find and schedule trips, while drivers and fleet owners can efficiently accept requests.",
+    url: "https://cab-frontend.vercel.app/",
   };
 
   const shakeMeet = {
-    name: "Shakemeet",
+    name: "SHAKEMEET",
     description:
       "ShakeMeet is a web app designed for peer-to-peer connections among users within the same network. Developed using React, Tailwind CSS, and Firebase as the database, it incorporates a STUN server for efficient communication. In the future, the plan is to establish a dedicated STUN server to ensure seamless performance. ",
+    url: "https://shakemeet-develop.onrender.com/",
   };
   return (
     <main className="projects">
@@ -19,11 +21,13 @@ export default function Projects() {
         source={"/RICA.JPG"}
         name={ricaCab.name}
         description={ricaCab.description}
+        url={ricaCab.url}
       />
       <MainProject
         source={"/SM.JPG"}
         name={shakeMeet.name}
         description={shakeMeet.description}
+        url={shakeMeet.url}
       />
     </main>
   );
