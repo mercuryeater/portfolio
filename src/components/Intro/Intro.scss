@@ -1,0 +1,80 @@
+.intro {
+  max-width: 1050px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px auto;
+  gap: 60px;
+
+  &__nameInfo {
+    text-align: left;
+    width: 320px;
+    h1 {
+      font-family: "ProximaNova-Bold";
+      font-size: 38px;
+      margin: 0px;
+      text-align: left;
+    }
+    h3 {
+      font-family: "ProximaNova-Thin";
+      font-size: 22px;
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    &__buttons {
+      display: flex;
+      max-width: 290px;
+      width: 100%;
+      justify-content: space-around;
+
+      a {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid white;
+        color: #d6e4f2;
+        border-radius: 12px;
+        padding: 6px 12px;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background-color: rgba(61, 86, 212, 0.404);
+      }
+
+      a:active {
+        background-color: rgba(20, 51, 209, 0.692);
+      }
+    }
+  }
+
+  &__description {
+    font-family: "ProximaNova-Thin";
+    font-size: 18px;
+    // margin: 18px 30px;
+
+    strong {
+      font-family: "ProximaNova";
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    flex-direction: row;
+    justify-content: center;
+
+    &__nameInfo {
+      flex-grow: 1; /* This makes both items grow to fill the available space equally */
+      flex-basis: 0; /* This allows the items to grow and fill the space */
+      max-width: 700px;
+    }
+
+    &__description {
+      flex-grow: 1;
+      flex-basis: 0;
+      max-width: 700px;
+    }
+  }
+}
