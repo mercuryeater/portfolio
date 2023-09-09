@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <div className="contact">
       <h2 className="contact__title">Coctact me</h2>
-      <p className="contact__title">I would love to work with you 👀</p>
+      <p className="contact__title">I would love to work with you 👀✨</p>
       <form className="" onSubmit={sendForm}>
         <input
           className="contact__input"
