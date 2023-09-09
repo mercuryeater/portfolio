@@ -1,10 +1,10 @@
-"use client";
-import "./Contact.scss";
+'use client';
+
+import './Contact.scss';
 
 export default function Contact() {
   const sendForm = (e) => {
     e.preventDefault();
-    console.log("sending form");
 
     const formData = new FormData(e.target);
     const message = Object.fromEntries(formData);
