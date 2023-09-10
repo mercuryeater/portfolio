@@ -15,7 +15,7 @@ export default function Contact() {
     <div className="contact">
       <h2 className="contact__title">Coctact me</h2>
       <p className="contact__title">I would love to work with you 👀</p>
-      <form className="" onSubmit={sendForm}>
+      <form className="contact__form" onSubmit={sendForm}>
         <input
           className="contact__input"
           type="text"
@@ -29,12 +29,12 @@ export default function Contact() {
           name="email"
         />
         <input
-          className="contact__inputXl"
+          className="contact__input --large"
           type="text"
           placeholder="Tell me, how can I help you?"
           name="message"
         />
-        <button type="submit" className="contact__btn">
+        <button className="contact__btn" type="submit">
           Send
         </button>
       </form>

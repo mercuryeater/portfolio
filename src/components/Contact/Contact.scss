@@ -1,0 +1,38 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    background-color: transparent;
+    color: white;
+    margin: 15px 0px;
+    border: 1px white solid;
+    border-radius: 8px;
+    padding: 11px 22px;
+    vertical-align: top;
+
+    &::placeholder {
+      color: white;
+    }
+
+    &.--large {
+      height: 80px;
+      line-height: 80px;
+    }
+  }
+
+  &__btn {
+    background-color: #3ac9996e;
+    color: rgb(217, 237, 255);
+    border: none;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+}
