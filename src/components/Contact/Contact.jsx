@@ -28,7 +28,7 @@ export default function Contact() {
           placeholder="Email address"
           name="email"
         />
-        <input
+        <textarea
           className="contact__input --large"
           type="text"
           placeholder="Tell me, how can I help you?"
