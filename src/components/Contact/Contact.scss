@@ -9,19 +9,21 @@
 
   &__input {
     background-color: transparent;
-    color: white;
+    color: #d6e4f2;
     margin: 15px 0px;
     border: 1px white solid;
     border-radius: 8px;
     padding: 11px 22px;
     vertical-align: top;
+    font-family: inherit;
 
     &::placeholder {
-      color: white;
+      color: rgba(255, 255, 255, 0.541);
     }
 
     &.--large {
       height: 80px;
+      resize: none;
     }
   }
 
