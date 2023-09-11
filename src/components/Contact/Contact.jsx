@@ -1,4 +1,5 @@
 "use client";
+import { sendMessage } from "@firebase/firebase.js";
 import "./Contact.scss";
 
 export default function Contact() {
@@ -8,33 +9,38 @@ export default function Contact() {
 
     const formData = new FormData(e.target);
     const message = Object.fromEntries(formData);
-    console.log(message);
+    sendMessage(message);
   };
 
   return (
     <div className="contact">
       <h2 className="contact__title">Coctact me</h2>
       <p className="contact__title">I would love to work with you 👀</p>
-      <form className="" onSubmit={sendForm}>
+      <form className="contact__form" onSubmit={sendForm}>
         <input
           className="contact__input"
           type="text"
           name="name"
           placeholder="Name"
+          maxLength="100"
         />
         <input
           className="contact__input"
           type="email"
           placeholder="Email address"
           name="email"
+          maxLength="100"
+          required
         />
-        <input
-          className="contact__inputXl"
+        <textarea
+          className="contact__input --large"
           type="text"
           placeholder="Tell me, how can I help you?"
           name="message"
+          maxLength="2000"
+          required
         />
-        <button type="submit" className="contact__btn">
+        <button className="contact__btn" type="submit">
           Send
         </button>
       </form>

@@ -1,0 +1,39 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    background-color: transparent;
+    color: #d6e4f2;
+    margin: 15px 0px;
+    border: 1px white solid;
+    border-radius: 8px;
+    padding: 11px 22px;
+    vertical-align: top;
+    font-family: inherit;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.541);
+    }
+
+    &.--large {
+      height: 80px;
+      resize: none;
+    }
+  }
+
+  &__btn {
+    background-color: #3ac9996e;
+    color: rgb(217, 237, 255);
+    border: none;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+}
