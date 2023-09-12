@@ -1,0 +1,18 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  max-width: 1050px;
+  margin: 0px auto;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 640px) {
+  .projects {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}

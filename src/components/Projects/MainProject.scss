@@ -1,0 +1,86 @@
+.project {
+  /* From https://css.glass */
+  background: rgba(214, 228, 242, 0.059);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(17, 4, 68, 0.259);
+  border: 1px solid rgba(214, 228, 242, 0.23);
+  display: grid;
+  grid-template-rows: minmax(150px, 300px) 1fr;
+  align-items: start;
+  flex-basis: calc(90% - 16px);
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  &__thumb {
+    height: 100%;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__texts {
+    display: grid;
+    grid-template-rows: auto auto;
+
+    &__name {
+      display: grid;
+      grid-template-columns: 3fr 1fr auto auto;
+      gap: 15px;
+      align-content: center;
+      background-color: #3e89898c;
+      margin: 0px;
+      padding: 0px 20px;
+
+      h2 {
+        grid-column: 1 / span 2;
+      }
+
+      a {
+        align-self: center;
+        text-decoration: none;
+        color: inherit;
+        border-radius: 10px;
+        border: 1px black solid;
+        display: flex;
+        padding: 5px;
+        background-color: #071c855d;
+        transition: all 0.1s ease-out;
+      }
+
+      a:hover {
+        background-color: #071c8579;
+        transform: scale(1.05);
+      }
+
+      a:active {
+        background-color: #071c85b0;
+        transform: scale(1);
+      }
+    }
+
+    &__description {
+      padding: 0px 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .project {
+    flex-basis: calc(50% - 16px);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .project {
+    &__texts {
+      &__name {
+        gap: 5px;
+      }
+    }
+  }
+}
