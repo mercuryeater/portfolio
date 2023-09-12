@@ -31,8 +31,10 @@ export async function sendMessage(message) {
       ...message,
       createdAt,
     });
-    console.log("Document written with ID: ", docRef.id);
-  } catch (e) {
-    console.error("Error adding document: ", e);
+
+    return "success";
+  } catch (error) {
+    console.error("!", error);
+    return "error" + error.message;
   }
 }
