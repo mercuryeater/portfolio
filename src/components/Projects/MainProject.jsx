@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { IconBrandGithubFilled, IconWorldWww } from "@tabler/icons-react";
 import "./MainProject.scss";
 
 export default function MainProject({ source, name, description, url }) {
@@ -9,22 +10,28 @@ export default function MainProject({ source, name, description, url }) {
     maxHeight: "100%",
   };
   return (
-    <Link className="link" href={url} target="_blank">
-      <div className="project">
-        <div className="project__thumb">
-          <Image
-            src={source}
-            alt="Test"
-            width={959}
-            height={516}
-            style={imageStyle}
-          />
-        </div>
-        <div className="project__texts">
-          <h2 className="project__texts__name">{name}</h2>
-          <p className="project__texts__description">{description}</p>
-        </div>
+    <div className="project">
+      <div className="project__thumb">
+        <Image
+          src={source}
+          alt="Test"
+          width={959}
+          height={516}
+          style={imageStyle}
+        />
       </div>
-    </Link>
+      <div className="project__texts">
+        <span className="project__texts__name">
+          <h2>{name}</h2>
+          <Link href={url} target="_blank">
+            <IconBrandGithubFilled size={25} stroke={1} />
+          </Link>
+          <Link href={url} target="_blank">
+            <IconWorldWww size={25} stroke={1} />
+          </Link>
+        </span>
+        <p className="project__texts__description">{description}</p>
+      </div>
+    </div>
   );
 }

@@ -9,12 +9,13 @@ export default function Home() {
     <main className="home">
       <Intro />
       <hr />
-      <h2>Projects</h2>
+      <h2 className="home__titles">Projects</h2>
       <Projects />
       <hr />
-      <h2>Skills</h2>
+      <h2 className="home__titles">Skills</h2>
       <Skills />
       <hr />
+      <h2 className="home__titles">Contact me</h2>
       <Contact />
     </main>
   );
