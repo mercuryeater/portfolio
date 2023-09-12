@@ -1,15 +1,20 @@
 "use client";
+import { Toaster, toast } from "sonner";
 import { sendMessage } from "@firebase/firebase.js";
 import "./Contact.scss";
 
 export default function Contact() {
   const sendForm = (e) => {
     e.preventDefault();
-    console.log("sending form");
 
     const formData = new FormData(e.target);
     const message = Object.fromEntries(formData);
-    sendMessage(message);
+    // sendMessage(message)
+    //   .then((result) => {
+    //     toast.success("Message sent successfully✨");
+    //   })
+    //   .catch((error) => toast.error("Error: " + error));
+    toast.success("Message sent successfully✨");
   };
 
   return (
@@ -43,6 +48,11 @@ export default function Contact() {
           Send
         </button>
       </form>
+      <Toaster
+        toastOptions={{
+          style: { background: "#3ea772d5", color: "#d7e2f3", border: "none" },
+        }}
+      />
     </div>
   );
 }
