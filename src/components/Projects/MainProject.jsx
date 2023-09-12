@@ -3,7 +3,13 @@ import Link from "next/link";
 import { IconBrandGithubFilled, IconWorldWww } from "@tabler/icons-react";
 import "./MainProject.scss";
 
-export default function MainProject({ source, name, description, url }) {
+export default function MainProject({
+  source,
+  name,
+  description,
+  webUrl,
+  repoUrl,
+}) {
   const imageStyle = {
     maxWidth: "100%",
     objectFit: "cover",
@@ -23,10 +29,10 @@ export default function MainProject({ source, name, description, url }) {
       <div className="project__texts">
         <span className="project__texts__name">
           <h2>{name}</h2>
-          <Link href={url} target="_blank">
+          <Link href={repoUrl} target="_blank">
             <IconBrandGithubFilled size={25} stroke={1} />
           </Link>
-          <Link href={url} target="_blank">
+          <Link href={webUrl} target="_blank">
             <IconWorldWww size={25} stroke={1} />
           </Link>
         </span>

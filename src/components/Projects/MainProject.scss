@@ -12,7 +12,7 @@
   transition: all 0.3s ease;
 
   &:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
   }
 
   &__thumb {
@@ -48,7 +48,18 @@
         border: 1px black solid;
         display: flex;
         padding: 5px;
-        background-color: rgb(7, 104, 104);
+        background-color: #071c855d;
+        transition: all 0.1s ease-out;
+      }
+
+      a:hover {
+        background-color: #071c8579;
+        transform: scale(1.05);
+      }
+
+      a:active {
+        background-color: #071c85b0;
+        transform: scale(1);
       }
     }
 
