@@ -9,11 +9,7 @@ export default function Contact() {
 
     const formData = new FormData(e.target);
     const message = Object.fromEntries(formData);
-    // sendMessage(message)
-    //   .then((result) => {
-    //     toast.success("Message sent successfully✨");
-    //   })
-    //   .catch((error) => toast.error("Error: " + error));
+    sendMessage(message)
     toast.success("Message sent successfully✨");
   };
 
