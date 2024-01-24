@@ -15,7 +15,7 @@ export default function Projects() {
     name: "SHAKEMEET",
     description:
       "ShakeMeet is a web app designed for peer-to-peer connections among users within the same network. Developed using React, Tailwind CSS, and Firebase as the database, it incorporates a STUN server for efficient communication. In the future, the plan is to establish a dedicated STUN server to ensure seamless performance. ",
-    webUrl: "https://shakemeet-develop.onrender.com/",
+    webUrl: "https://shakemeet.onrender.com/",
     repoUrl: "https://github.com/mercuryeater/ShakeMeet",
   };
   return (
