@@ -20,14 +20,21 @@ export default function Projects() {
   };
 
   const rastroPeludo = {
-    name: "Rastro Peludo",
+    name: "RASTRO PELUDO (WIP)",
     description:
-      "Rastro Peludo is a web app designed to report lost or seen pets. It realies on the users reporting encounters with lost dogs or cats in the sreet to help the owners find them.",
-    webUrl: "http://",
+      "Rastro Peludo is a web app designed to report lost or seen pets. It relies on the users reporting encounters with lost dogs or cats in the sreet to help the owners find them. It's designed mobile first and the UX and code is all mine. It's being developed using Figma, Next.js 13^, React and Sass.",
+    webUrl: "https://rastro-peludo.vercel.app/",
     repoUrl: "https://github.com/mercuryeater/rastro-peludo",
   };
   return (
     <main className="projects">
+      <MainProject
+        source={"/RP.JPG"}
+        name={rastroPeludo.name}
+        description={rastroPeludo.description}
+        webUrl={rastroPeludo.webUrl}
+        repoUrl={rastroPeludo.repoUrl}
+      />
       <MainProject
         source={"/RICA.JPG"}
         name={ricaCab.name}
@@ -41,13 +48,6 @@ export default function Projects() {
         description={shakeMeet.description}
         webUrl={shakeMeet.webUrl}
         repoUrl={shakeMeet.repoUrl}
-      />
-      <MainProject
-        source={"/RP.JPG"}
-        name={rastroPeludo.name}
-        description={rastroPeludo.description}
-        webUrl={rastroPeludo.webUrl}
-        repoUrl={rastroPeludo.repoUrl}
       />
     </main>
   );
