@@ -26,6 +26,14 @@ export default function Projects() {
     webUrl: "https://rastro-peludo.vercel.app/",
     repoUrl: "https://github.com/mercuryeater/rastro-peludo",
   };
+
+  const media2Words = {
+    name: "MEDIA TO WORDS COUNTER",
+    description:
+      "This project is designed to process various types of media that contain audio streams. It generates a transcript of the audio and saves it as a .txt file. Simultaneously, it creates a .csv file that lists all the spoken words from the media, sorted by their frequency of occurrence. It was built using Python, and test made with Pytests.",
+    webUrl: "https://www.youtube.com/watch?v=nyCTkY_DHM0",
+    repoUrl: "https://github.com/mercuryeater/media2-word-counter",
+  };
   return (
     <main className="projects">
       <MainProject
@@ -41,6 +49,13 @@ export default function Projects() {
         description={ricaCab.description}
         webUrl={ricaCab.webUrl}
         repoUrl={ricaCab.repoUrl}
+      />
+      <MainProject
+        source={"/M2W.PNG"}
+        name={media2Words.name}
+        description={media2Words.description}
+        webUrl={media2Words.webUrl}
+        repoUrl={media2Words.repoUrl}
       />
       <MainProject
         source={"/SM.JPG"}
