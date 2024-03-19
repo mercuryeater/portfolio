@@ -25,8 +25,8 @@ export default function Intro() {
       <p className="intro__description">
         Proficient in developing web applications using
         <strong> JavaScript/TypeScript</strong> in <strong> React</strong> and{" "}
-        <strong> Node.js</strong>, utilizing <strong> SQL</strong> (Postgres)
-        with Prisma, and <strong> NoSQL</strong> (MongoDB) with Mongoose.
+        <strong> Node.js</strong>, using <strong> SQL</strong> (Postgres)
+        with Prisma, and <strong> NoSQL</strong> (MongoDB) with Mongoose. Strong <strong>Python</strong> skills, experience automating stuff, doing <strong>Flask</strong> servers and using <strong>Keras</strong>.
         Experience includes working in small teams following{" "}
         <strong>SCRUM</strong> methodology and implementing{" "}
         <strong> Git Flow</strong> for enhanced action flow and communication.
