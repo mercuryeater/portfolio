@@ -9,8 +9,20 @@ export default function Contact() {
 
     const formData = new FormData(e.target);
     const message = Object.fromEntries(formData);
+
+    // Checks it is not a bot filling the form
+    if (message.botField) {
+      console.log("Parece ser que un bot intentó entrar");
+      return;
+    }
+
+    try {
     sendMessage(message)
     toast.success("Message sent successfully✨");
+    } catch (error) {
+      console.error("!", error);
+      toast.error("Something went wrong 😢");
+    }
   };
 
   return (
@@ -39,6 +51,12 @@ export default function Contact() {
           name="message"
           maxLength="2000"
           required
+        />
+         <input
+          type="text"
+          placeholder="Information"
+          name="botField"
+          style={{ display: "none" }}
         />
         <button className="contact__btn" type="submit">
           Send
