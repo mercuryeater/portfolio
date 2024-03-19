@@ -34,6 +34,8 @@ export default function Projects() {
     webUrl: "https://www.youtube.com/watch?v=nyCTkY_DHM0",
     repoUrl: "https://github.com/mercuryeater/media2-word-counter",
   };
+
+
   return (
     <main className="projects">
       <MainProject
