@@ -22,10 +22,20 @@ export default function Projects() {
   const rastroPeludo = {
     name: "RASTRO PELUDO (WIP)",
     description:
-      "Rastro Peludo is a web app designed to report lost or seen pets. It relies on the users reporting encounters with lost dogs or cats in the sreet to help the owners find them. It's designed mobile first and the UX and code is all mine. It's being developed using Figma, Next.js 13^, React and Sass.",
+      "Rastro Peludo is a web app designed to report lost or seen pets. It relies on the users reporting encounters with lost dogs or cats in the street to help the owners find them. It's designed mobile first and the UX and code is all mine. It's being developed using Figma, Next.js 13^, React, Sass and Express.js.",
     webUrl: "https://rastro-peludo.vercel.app/",
     repoUrl: "https://github.com/mercuryeater/rastro-peludo",
   };
+
+  const media2Words = {
+    name: "MEDIA TO WORDS COUNTER",
+    description:
+      "This project is designed to process various types of media that contain audio streams. It generates a transcript of the audio and saves it as a .txt file. Simultaneously, it creates a .csv file that lists all the spoken words from the media, sorted by their frequency of occurrence. It was built using Python, and test made with Pytests.",
+    webUrl: "https://www.youtube.com/watch?v=nyCTkY_DHM0",
+    repoUrl: "https://github.com/mercuryeater/media2-word-counter",
+  };
+
+
   return (
     <main className="projects">
       <MainProject
@@ -41,6 +51,13 @@ export default function Projects() {
         description={ricaCab.description}
         webUrl={ricaCab.webUrl}
         repoUrl={ricaCab.repoUrl}
+      />
+      <MainProject
+        source={"/M2W.PNG"}
+        name={media2Words.name}
+        description={media2Words.description}
+        webUrl={media2Words.webUrl}
+        repoUrl={media2Words.repoUrl}
       />
       <MainProject
         source={"/SM.JPG"}
