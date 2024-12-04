@@ -4,9 +4,9 @@ import "./Projects.scss";
 export default function Projects() {
   const projects = [
     {
-      name: "KODBOT (WIP)",
+      name: "PYBOT (WIP)",
       description:
-        "KodBot is an AI-powered Python tutor designed to help Spanish-speaking students. Using technologies like TypeScript, React, Next.js, LangChain, and ChatGPT, KodBot offers real-time code analysis, error correction, clear explanations of Python concepts, code generation, and personalized learning experiences. By providing immediate feedback and tailored guidance, KodBot aims to improve Python learning outcomes for Spanish-speaking students.",
+        "PyBot is an AI-powered Python tutor designed to help Spanish-speaking students. Using technologies like TypeScript, React, Next.js, LangChain, and ChatGPT, KodBot offers real-time code analysis, error correction, clear explanations of Python concepts, code generation, and personalized learning experiences. By providing immediate feedback and tailored guidance, KodBot aims to improve Python learning outcomes for Spanish-speaking students.",
       webUrl: "https://python-tutor2.vercel.app/",
       repoUrl: "https://github.com/mercuryeater/python-tutor",
       source: "/PYBOT.PNG",
